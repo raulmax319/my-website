@@ -1,29 +1,30 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import Navlink from './Navlinks';
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <nav className="nav">
       <div className="container">
         <div className="logo">
           <a href="#">Raul Max</a>
         </div>
-        <div id="mainListDiv" className="main_list">
+        <div
+          id="mainListDiv"
+          className={isOpen ? 'show_list main_list' : 'main_list'}
+        >
           <ul className="navlinks">
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <Navlink link="About" />
+            <Navlink link="Portfolio" />
+            <Navlink link="Services" />
+            <Navlink link="Contact" />
           </ul>
         </div>
-        <span className="navTrigger">
+        <span
+          className={isOpen ? 'navTrigger active' : 'navTrigger'}
+          onClick={toggle}
+        >
           <i></i>
           <i></i>
           <i></i>
