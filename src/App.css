@@ -93,15 +93,6 @@ body {
   .container {
     margin: 0;
   }
-  .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5vh;
-  }
-  
-  .content span {
-    width: max-content;
-  }
 }
 
 @media screen and (max-width: 768px) {

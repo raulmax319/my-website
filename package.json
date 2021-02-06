@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.4",
@@ -13,7 +14,11 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-parallax": "^3.1.2",
+    "react-reveal": "^1.2.2",
     "react-scripts": "4.0.2",
+    "react-scroll": "^1.8.1",
+    "react-stickynode": "^3.0.4",
     "react-typed": "^1.2.0",
     "web-vitals": "^1.0.1"
   },
