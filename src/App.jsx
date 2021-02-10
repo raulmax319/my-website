@@ -1,31 +1,14 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-import './assets/css/styles.css';
-import './assets/css/responsive.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import logo from './images/logo.png';
-import logoS from './images/logo-sticky.png';
-import data from './data';
-
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-
-const { name, typed, socialLinks } = data;
+import { Container } from './components/Styled/Container';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="body_wrapper">
-      <Navbar
-        mContainer="costume_container"
-        mainLogo={logo}
-        stickyLogo={logoS}
-      />
-      <Header name={name} socialLinks={socialLinks} typedText={typed} />
-      <div>
-        <h1>Soon to come</h1>
-      </div>
-    </div>
+    <Container>
+      <Navbar />
+    </Container>
   );
 }
 

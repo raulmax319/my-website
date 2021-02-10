@@ -21,6 +21,7 @@
     "react-scroll": "^1.8.1",
     "react-stickynode": "^3.0.4",
     "react-typed": "^1.2.0",
+    "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

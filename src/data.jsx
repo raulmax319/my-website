@@ -8,7 +8,6 @@ import {
 const data = {
   name: 'Raul Max.',
   typed: ['Backend Developer.', 'Frontend Developer.', 'Coffee Lover.'],
-  ptext: '',
   socialLinks: [
     {
       name: 'Facebook',
@@ -31,6 +30,9 @@ const data = {
       className: faGithub,
     },
   ],
+  aboutMe: 'About Me',
+  aboutDetails: 'Full-Stack developer',
+  details: "I'm Raul Max ty",
 };
 
 export default data;
