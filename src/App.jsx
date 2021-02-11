@@ -1,31 +1,24 @@
 import React from 'react';
 
-import './assets/css/styles.css';
-import './assets/css/responsive.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { GlobalStyles } from './components/Styled/Global';
+import { Container } from './components/Styled/Container';
 
-import logo from './images/logo.png';
-import logoS from './images/logo-sticky.png';
+import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+
 import data from './data';
 
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-
-const { name, typed, socialLinks } = data;
+const { name, socialLinks } = data;
 
 function App() {
   return (
-    <div className="body_wrapper">
-      <Navbar
-        mContainer="costume_container"
-        mainLogo={logo}
-        stickyLogo={logoS}
-      />
-      <Header name={name} socialLinks={socialLinks} typedText={typed} />
-      <div>
-        <h1>Soon to come</h1>
-      </div>
-    </div>
+    <>
+      <GlobalStyles />
+      <Container>
+        <Navbar />
+        <Header name={name} socialLinks={socialLinks} />
+      </Container>
+    </>
   );
 }
 
