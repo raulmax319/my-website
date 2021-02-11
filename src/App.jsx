@@ -1,14 +1,18 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
+import { GlobalStyles } from './components/Styled/Global';
 import { Container } from './components/Styled/Container';
+
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <Container>
-      <Navbar />
-    </Container>
+    <>
+      <GlobalStyles />
+      <Container>
+        <Navbar />
+      </Container>
+    </>
   );
 }
 
