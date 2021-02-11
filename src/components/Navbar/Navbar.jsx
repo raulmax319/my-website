@@ -24,7 +24,8 @@ function Navbar() {
       <NavList isOpen={isOpen}>
         <NavLinks href="/">Home</NavLinks>
         <NavLinks href="/">About</NavLinks>
-        <NavLinks href="/">Home</NavLinks>
+        <NavLinks href="/">Portfolio</NavLinks>
+        <NavLinks href="/">Services</NavLinks>
         <NavLinks href="/">Contact</NavLinks>
       </NavList>
     </Nav>
