@@ -64,10 +64,14 @@ export const NavLinks = styled.a`
 export const NavLogo = styled.a``;
 
 export const NavBrand = styled.img`
-  margin: auto 5rem;
+  margin: auto 0 auto 4rem;
   content: url(${logo});
   padding: 0.625rem 0;
   cursor: pointer;
+
+  @media (max-width: 991px) {
+    margin: auto 0 auto 0;
+  }
 `;
 
 export const NavToggler = styled.div`
