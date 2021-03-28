@@ -9,7 +9,7 @@ import {
   NavToggler,
 } from './Navbar.styled';
 
-function Navbar() {
+export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
@@ -25,11 +25,8 @@ function Navbar() {
         <NavLinks href="/">Home</NavLinks>
         <NavLinks href="/">About</NavLinks>
         <NavLinks href="/">Portfolio</NavLinks>
-        <NavLinks href="/">Services</NavLinks>
         <NavLinks href="/">Contact</NavLinks>
       </NavList>
     </Nav>
   );
 }
-
-export default Navbar;

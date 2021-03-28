@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Fade, Reveal } from 'react-reveal';
 
 import {
@@ -9,9 +9,16 @@ import {
   Container,
   BannerContent,
   SocialLinks,
-} from './styled/Header.styled';
+  H2,
+} from './Header.styled';
 
-function Header({ name, socialLinks, typedText }) {
+interface HeaderProps {
+  name: string;
+  socialLinks: Array<{ name: string; url: string; className: IconProp }>;
+  typedText?: string;
+}
+
+export function Header({ name, socialLinks, typedText }: HeaderProps) {
   return (
     <Home>
       <BannerArea>
@@ -21,7 +28,7 @@ function Header({ name, socialLinks, typedText }) {
               <h5>HELLO</h5>
             </Reveal>
             <Reveal effect="fadeInUp">
-              <h2>I&#39;m Raul Max</h2>
+              <H2>I&#39;m Raul Max</H2>
             </Reveal>
             <Reveal effect="fadeInUp">
               <h4>Full-Stack Developer</h4>
@@ -46,11 +53,3 @@ function Header({ name, socialLinks, typedText }) {
     </Home>
   );
 }
-
-Header.propTypes = {
-  name: PropTypes.string,
-  socialLinks: PropTypes.array,
-  typedText: PropTypes.array,
-};
-
-export default Header;

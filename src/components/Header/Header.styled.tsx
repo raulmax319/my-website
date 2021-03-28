@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import bgImage from '../../../assets/images/background.jpg';
 
 export const Home = styled.section``;
 
@@ -16,7 +15,7 @@ export const BannerArea = styled.div`
     height: 100%;
     top: 0;
     left: 0;
-    background: url(${bgImage}) no-repeat scroll center 0 / cover;
+    background: url('images/background.jpg') no-repeat scroll center 0 / cover;
     z-index: 0;
   }
 `;
@@ -36,17 +35,17 @@ export const BannerContent = styled.div`
     letter-spacing: 1px;
   }
 
-  h2 {
-    margin: 0.625rem 0;
-    font-size: 3.5rem;
-    font-weight: 700;
-  }
-
   h4 {
     font-size: 1.5rem;
     letter-spacing: 0;
     padding: 10px 0 10px;
   }
+`;
+
+export const H2 = styled.h2`
+  margin: 0.625rem 0;
+  font-size: 3.5rem;
+  font-weight: bold;
 `;
 
 export const SocialLinks = styled.ul`

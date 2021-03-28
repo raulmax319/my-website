@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import logo from '../../assets/images/logo-sticky.png';
 
 export const Nav = styled.nav`
   padding: 0 2rem;
@@ -9,7 +8,7 @@ export const Nav = styled.nav`
   flex-wrap: wrap;
 `;
 
-export const NavList = styled.div`
+export const NavList = styled('div')<{ isOpen: boolean }>`
   margin: auto 5rem;
   display: flex;
   justify-content: space-between;
@@ -43,9 +42,6 @@ export const NavLinks = styled.a`
     background: #040c2c;
     opacity: 0.71;
     display: block;
-    left: auto;
-    right: 0px;
-    bottom: 0px;
     width: 0%;
     height: 2px;
     z-index: 1;
@@ -64,7 +60,7 @@ export const NavLogo = styled.a``;
 
 export const NavBrand = styled.img`
   margin: auto 0 auto 4rem;
-  content: url(${logo});
+  content: url('images/logo-sticky.png');
   padding: 0.625rem 0;
   cursor: pointer;
 
