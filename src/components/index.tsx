@@ -1,4 +1,5 @@
-import { Header } from './Header/Header';
 import { Navbar } from './Navbar/Navbar';
+import { Button } from './Button/Button';
+import { BackToTopBtn } from './BackToTopBtn/BackToTopBtn';
 
-export { Header, Navbar };
+export { Navbar, BackToTopBtn, Button };

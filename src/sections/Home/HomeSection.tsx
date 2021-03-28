@@ -10,17 +10,22 @@ import {
   BannerContent,
   SocialLinks,
   H2,
-} from './Header.styled';
+} from './HomeSection.styled';
+import { Button } from '../../components';
 
-interface HeaderProps {
+interface HomeSectionProps {
   name?: string;
   socialLinks: Array<{ name: string; url: string; className: IconProp }>;
   typedText?: string;
 }
 
-export function Header({ name, socialLinks, typedText }: HeaderProps) {
+export function HomeSection({
+  name,
+  socialLinks,
+  typedText,
+}: HomeSectionProps) {
   return (
-    <Home>
+    <Home className="home">
       <BannerArea>
         <Container>
           <BannerContent>

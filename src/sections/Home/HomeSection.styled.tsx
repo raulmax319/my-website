@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Home = styled.section``;
 
 export const BannerArea = styled.div`
-  min-height: 91.2vh;
+  min-height: calc(100vh);
   position: relative;
   z-index: 1;
   text-align: center;
@@ -52,6 +52,7 @@ export const SocialLinks = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 2rem;
 
   li {
     display: inline-block;

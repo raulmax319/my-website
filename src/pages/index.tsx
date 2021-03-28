@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { GlobalStyles, Container } from '../styles';
-
-import { Navbar, Header } from '../components';
+import { BackToTopBtn, Navbar } from '../components';
+import { HomeSection, AboutSection } from '../sections';
 
 import data from '../assets/data/data';
 
@@ -12,9 +12,11 @@ export default function Home() {
   return (
     <>
       <GlobalStyles />
+      <BackToTopBtn />
       <Container>
         <Navbar />
-        <Header name={name} socialLinks={socialLinks} />
+        <HomeSection socialLinks={socialLinks} />
+        <AboutSection />
       </Container>
     </>
   );
