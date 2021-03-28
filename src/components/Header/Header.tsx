@@ -13,7 +13,7 @@ import {
 } from './Header.styled';
 
 interface HeaderProps {
-  name: string;
+  name?: string;
   socialLinks: Array<{ name: string; url: string; className: IconProp }>;
   typedText?: string;
 }
