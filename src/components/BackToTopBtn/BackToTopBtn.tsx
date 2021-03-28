@@ -16,18 +16,17 @@ export function BackToTopBtn() {
 
   return (
     <>
-      {isVisible && (
-        <SquareBtn
-          to="home"
-          activeClass="active"
-          offset={-86}
-          duration={500}
-          spy
-          smooth
-        >
-          <FontAwesomeIcon icon={faChevronUp} />
-        </SquareBtn>
-      )}
+      <SquareBtn
+        to="home"
+        activeClass="active"
+        offset={-86}
+        duration={500}
+        spy
+        smooth
+        $isvisible={isVisible}
+      >
+        <FontAwesomeIcon icon={faChevronUp} />
+      </SquareBtn>
     </>
   );
 }

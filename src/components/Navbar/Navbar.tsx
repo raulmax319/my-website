@@ -23,16 +23,16 @@ export function Navbar() {
 
   return (
     <Nav scrolled={isSticky}>
-      <NavLogo href="/">
+      <NavLogo to="home" spy>
         <NavBrand />
       </NavLogo>
       <Div>
-        <NavToggler onClick={() => setIsOpen(!isOpen)}>
+        <NavToggler onClick={() => setIsOpen(!isOpen)} scrolled={isSticky}>
           <span />
           <span />
           <span />
         </NavToggler>
-        <NavList isOpen={isOpen}>
+        <NavList scrolled={isSticky} isOpen={isOpen}>
           <NavLinks
             activeClass="active"
             to="home"
@@ -62,6 +62,16 @@ export function Navbar() {
             smooth
           >
             Projects
+          </NavLinks>
+          <NavLinks
+            activeClass="active"
+            to="skills"
+            offset={-86}
+            duration={500}
+            spy
+            smooth
+          >
+            Skills
           </NavLinks>
           <NavLinks
             activeClass="active"

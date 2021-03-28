@@ -1,25 +1,43 @@
 import { Link } from 'react-scroll';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const SquareBtn = styled(Link)`
+interface TransientProp {
+  $isvisible: boolean;
+}
+
+export const SquareBtn = styled(Link)<TransientProp>`
   position: fixed;
-  float: right;
   text-decoration: none;
   top: 85vh;
-  left: 90%;
+  ${({ $isvisible }) =>
+    $isvisible
+      ? css`
+          left: 95%;
+        `
+      : css`
+          left: 120%;
+        `}
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
   cursor: pointer;
   width: 4rem;
   height: 4rem;
-  border-radius: 30%;
+  border-radius: 10px;
   color: #fff;
   background-color: #212529;
   z-index: 9999;
   display: visible;
-  transition: left 500ms ease-in;
-  @media (max-width: 768px) {
-    left: 80%;
+  transition: left 400ms ease-in;
+
+  @media (max-width: 768px), (max-width: 1280px) {
+    ${({ $isvisible }) =>
+      $isvisible
+        ? css`
+            left: 90%;
+          `
+        : css`
+            left: 120%;
+          `}
   }
 `;

@@ -52,7 +52,7 @@ export const SocialLinks = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 
   li {
     display: inline-block;

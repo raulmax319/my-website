@@ -11,7 +11,6 @@ import {
   SocialLinks,
   H2,
 } from './HomeSection.styled';
-import { Button } from '../../components';
 
 interface HomeSectionProps {
   name?: string;
