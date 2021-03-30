@@ -11,10 +11,17 @@ import {
   P,
   Circle,
   Content,
+  List,
+  ListItem as Item,
 } from './AboutSection.styled';
 import { Button } from '../../components';
 
-export function AboutSection() {
+interface IProps {
+  cvLink: string;
+  list: Array<{ text: string; icon: string }>;
+}
+
+export function AboutSection({ cvLink, list }: IProps) {
   return (
     <About className="about">
       <Container>
@@ -37,15 +44,16 @@ export function AboutSection() {
                 </Fade>
                 <Reveal>
                   <P>
-                    Making all those little fluffies that live in the clouds. We
-                    start with a vision in our heart, and we put it on canvas.
-                    Water's like me. It's laaazy ... Boy, it always looks for
-                    the easiest way to do things.
+                    I actually don't know what to write here so, my name is Raul
+                    Max and i'm a technology Enthusiast who loves japanese
+                    culture and to code everyday, yes, even weekends! I am a
+                    Full-Stack developer with main focus on Front-end
                   </P>
-                  <P>Just</P>
-                  <P>a</P>
-                  <P>filler</P>
-                  <P>Paragraph</P>
+                  <List>
+                    {list.map(element => (
+                      <Item icon={element.icon}>{element.text}</Item>
+                    ))}
+                  </List>
                   <div
                     style={{
                       display: 'flex',
@@ -56,7 +64,7 @@ export function AboutSection() {
                     <Button href="mailto:raulmax319@gmail.com" primary>
                       Contact me
                     </Button>
-                    <Button href="">Resume</Button>
+                    <Button href={cvLink}>Download CV</Button>
                   </div>
                 </Reveal>
               </Content>

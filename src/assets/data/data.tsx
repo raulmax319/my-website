@@ -5,7 +5,7 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
-const data = {
+export default {
   name: 'Raul Max.',
   typed: ['Backend Developer.', 'Frontend Developer.', 'Coffee Lover.'],
   socialLinks: [
@@ -30,9 +30,26 @@ const data = {
       className: faGithub,
     },
   ],
+  thingsList: [
+    {
+      text: 'Video games',
+      icon: '🎮',
+    },
+    {
+      text: 'Coffee',
+      icon: '☕',
+    },
+    {
+      text: 'Programming',
+      icon: '⌨',
+    },
+    {
+      text: 'aaaaaaaa',
+      icon: '⌨',
+    },
+  ],
   aboutMe: 'About Me',
   aboutDetails: 'Full-Stack developer',
   details: "I'm Raul Max ty",
+  cvLink: '',
 };
-
-export default data;

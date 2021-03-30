@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const MyButton = styled('a')<{ primary: boolean }>`
+  width: 200px;
+  height: 45px;
   display: inline-block;
   cursor: pointer;
   font-weight: 400;

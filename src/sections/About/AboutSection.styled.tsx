@@ -74,3 +74,28 @@ export const P = styled.p`
   line-height: 1.7;
   color: gray;
 `;
+
+export const List = styled.ul`
+  margin-top: 0;
+  margin-bottom: 2.25rem;
+  padding-left: 0;
+  list-style: none;
+`;
+
+export const ListItem = styled('li')<{ icon: string }>`
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  display: list-item;
+  text-align: -webkit-match-parent;
+
+  &::before {
+    left: 0;
+    font-size: 1.3rem;
+    content: ${({ icon }) => String(icon) ?? '☕'};
+    color: #71bc42;
+    top: -0.3rem;
+    position: absolute;
+  }
+`;
