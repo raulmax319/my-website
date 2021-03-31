@@ -17,7 +17,7 @@ export default function Home() {
         <Navbar />
         <HomeSection socialLinks={socialLinks} />
         <AboutSection cvLink={cvLink} list={thingsList} />
-        <SkillsSection />
+        {/* <SkillsSection /> */}
       </Container>
     </>
   );

@@ -6,11 +6,12 @@ interface ButtonProps {
   children: string | ReactNode;
   primary?: boolean;
   href: string;
+  target?: string;
 }
 
-export function Button({ children, primary, href }: ButtonProps) {
+export function Button({ children, primary, href, target }: ButtonProps) {
   return (
-    <MyButton href={href} primary={primary}>
+    <MyButton href={href} primary={primary} target={target}>
       {children}
     </MyButton>
   );

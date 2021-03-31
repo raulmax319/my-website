@@ -40,14 +40,14 @@ export function AboutSection({ cvLink, list }: IProps) {
             <div>
               <Content>
                 <Fade bottom cascade duration={500}>
-                  <H3>I like programming lol</H3>
+                  <H3>Things about me</H3>
                 </Fade>
                 <Reveal>
                   <P>
-                    I actually don't know what to write here so, my name is Raul
-                    Max and i'm a technology Enthusiast who loves japanese
-                    culture and to code everyday, yes, even weekends! I am a
-                    Full-Stack developer with main focus on Front-end
+                    I actually don&#39;t know what to write here so, my name is
+                    Raul Max and I&#39;m a technology Enthusiast who loves
+                    japanese culture and to code everyday, yes, even weekends! I
+                    am a Full-Stack developer with main focus on Front-end.
                   </P>
                   <P blue>Some things i like:</P>
                   <List>
@@ -68,7 +68,9 @@ export function AboutSection({ cvLink, list }: IProps) {
                       <Button href="mailto:raulmax319@gmail.com" primary>
                         Contact me
                       </Button>
-                      <Button href={cvLink}>Download CV</Button>
+                      <Button href={cvLink} target="_blank">
+                        Download CV
+                      </Button>
                     </Fade>
                   </div>
                 </Reveal>

@@ -51,5 +51,6 @@ export default {
   aboutMe: 'About Me',
   aboutDetails: 'Full-Stack developer',
   details: "I'm Raul Max ty",
-  cvLink: '',
+  cvLink:
+    'https://drive.google.com/file/d/1fqB5nZrWfiUVcv1a5o4wD7q4cvLN60r9/view?usp=sharing',
 };
