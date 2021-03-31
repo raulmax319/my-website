@@ -65,14 +65,14 @@ export const H3 = styled.h3`
   line-height: 1.2;
 `;
 
-export const P = styled.p`
+export const P = styled('p')<{ blue?: boolean }>`
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   text-align: left;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7;
-  color: gray;
+  color: ${({ blue }) => (blue ? '#007bff' : 'gray')};
 `;
 
 export const List = styled.ul`
@@ -93,7 +93,7 @@ export const ListItem = styled('li')<{ icon: string }>`
   &::before {
     left: 0;
     font-size: 1.3rem;
-    content: ${({ icon }) => String(icon) ?? '☕'};
+    content: ${({ icon }) => icon};
     color: #71bc42;
     top: -0.3rem;
     position: absolute;

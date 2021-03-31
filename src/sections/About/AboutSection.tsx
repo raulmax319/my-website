@@ -49,9 +49,12 @@ export function AboutSection({ cvLink, list }: IProps) {
                     culture and to code everyday, yes, even weekends! I am a
                     Full-Stack developer with main focus on Front-end
                   </P>
+                  <P blue>Some things i like:</P>
                   <List>
                     {list.map(element => (
-                      <Item icon={element.icon}>{element.text}</Item>
+                      <Fade bottom cascade duration={500}>
+                        <Item icon={element.icon}>{element.text}</Item>
+                      </Fade>
                     ))}
                   </List>
                   <div
@@ -61,10 +64,12 @@ export function AboutSection({ cvLink, list }: IProps) {
                       justifyContent: 'space-evenly',
                     }}
                   >
-                    <Button href="mailto:raulmax319@gmail.com" primary>
-                      Contact me
-                    </Button>
-                    <Button href={cvLink}>Download CV</Button>
+                    <Fade right cascade duration={300}>
+                      <Button href="mailto:raulmax319@gmail.com" primary>
+                        Contact me
+                      </Button>
+                      <Button href={cvLink}>Download CV</Button>
+                    </Fade>
                   </div>
                 </Reveal>
               </Content>

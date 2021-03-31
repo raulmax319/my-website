@@ -32,20 +32,20 @@ export default {
   ],
   thingsList: [
     {
-      text: 'Video games',
-      icon: '🎮',
+      text: 'Games',
+      icon: "'🎲'",
     },
     {
       text: 'Coffee',
-      icon: '☕',
+      icon: "'☕'",
     },
     {
-      text: 'Programming',
-      icon: '⌨',
+      text: 'Gazing at the night sky',
+      icon: "'🔭'",
     },
     {
-      text: 'aaaaaaaa',
-      icon: '⌨',
+      text: 'Cats',
+      icon: "'🐈'",
     },
   ],
   aboutMe: 'About Me',

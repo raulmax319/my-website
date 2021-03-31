@@ -2,7 +2,7 @@ import React from 'react';
 
 import { GlobalStyles, Container } from '../styles';
 import { BackToTopBtn, Navbar } from '../components';
-import { HomeSection, AboutSection } from '../sections';
+import { HomeSection, AboutSection, SkillsSection } from '../sections';
 
 import data from '../assets/data/data';
 
@@ -17,6 +17,7 @@ export default function Home() {
         <Navbar />
         <HomeSection socialLinks={socialLinks} />
         <AboutSection cvLink={cvLink} list={thingsList} />
+        <SkillsSection />
       </Container>
     </>
   );

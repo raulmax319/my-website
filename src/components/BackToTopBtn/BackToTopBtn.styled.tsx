@@ -28,7 +28,7 @@ export const SquareBtn = styled(Link)<TransientProp>`
   background-color: #212529;
   z-index: 9999;
   display: visible;
-  transition: left 400ms ease-in;
+  transition: left 400ms ease-in-out;
 
   @media (max-width: 768px), (max-width: 1280px) {
     ${({ $isvisible }) =>
