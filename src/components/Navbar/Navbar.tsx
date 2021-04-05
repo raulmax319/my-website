@@ -53,7 +53,7 @@ export function Navbar() {
           >
             About
           </NavLinks>
-          <NavLinks
+          {/* <NavLinks
             activeClass="active"
             to="projects"
             offset={-86}
@@ -72,7 +72,7 @@ export function Navbar() {
             smooth
           >
             Skills
-          </NavLinks>
+          </NavLinks> */}
           <NavLinks
             activeClass="active"
             to="contact"

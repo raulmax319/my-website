@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const About = styled.section`
-  padding: 5rem 0;
+  padding: 5rem 10rem;
 `;
 
 export const Container = styled.div`
@@ -38,8 +38,8 @@ export const Circle = styled.figure`
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  margin-inline-start: 00px;
+  margin-inline-end: 80px;
 
   &::after {
     width: 300px;
@@ -75,27 +75,30 @@ export const P = styled('p')<{ blue?: boolean }>`
   color: ${({ blue }) => (blue ? '#007bff' : 'gray')};
 `;
 
-export const List = styled.ul`
+export const List = styled.div`
+  display: flex;
+  flex-direction: row;
   margin-top: 0;
   margin-bottom: 2.25rem;
   padding-left: 0;
-  list-style: none;
 `;
 
-export const ListItem = styled('li')<{ icon: string }>`
+export const ListItem = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-left: 2.5rem;
   margin-bottom: 1rem;
   line-height: 1.5;
-  display: list-item;
   text-align: -webkit-match-parent;
+`;
 
-  &::before {
-    left: 0;
-    font-size: 1.3rem;
-    content: ${({ icon }) => icon};
-    color: #71bc42;
-    top: -0.3rem;
-    position: absolute;
-  }
+export const ProfileImage = styled.img`
+  width: 300px;
+  height: 300px;
+  margin-left: 10rem;
+  border-radius: 50%;
+  border: 5px solid #313131;
 `;

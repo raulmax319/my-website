@@ -6,7 +6,7 @@ import { HomeSection, AboutSection, SkillsSection } from '../sections';
 
 import data from '../assets/data/data';
 
-const { socialLinks, cvLink, thingsList } = data;
+const { socialLinks, cvLink, profilePic, thingsList } = data;
 
 export default function Home() {
   return (
@@ -16,7 +16,11 @@ export default function Home() {
       <Container>
         <Navbar />
         <HomeSection socialLinks={socialLinks} />
-        <AboutSection cvLink={cvLink} list={thingsList} />
+        <AboutSection
+          cvLink={cvLink}
+          profilePic={profilePic}
+          list={thingsList}
+        />
         {/* <SkillsSection /> */}
       </Container>
     </>
