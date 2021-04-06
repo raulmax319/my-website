@@ -55,9 +55,9 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                 <Reveal>
                   <P>
                     Hello! My name is Raul Max, I am from Brazil and a
-                    technology enthusiast ever since my childhood. Now I'm
-                    working as a software developer building mobile/web
-                    applications, mainly focusing on Front End technologies.
+                    technology enthusiast. Now I'm working as a software
+                    developer building mobile/web applications, mainly focusing
+                    on Front End technologies.
                   </P>
                   <P blue>Some of the technologies i use:</P>
                   <List>

@@ -2,7 +2,12 @@ import React from 'react';
 
 import { GlobalStyles, Container } from '../styles';
 import { BackToTopBtn, Navbar } from '../components';
-import { HomeSection, AboutSection, SkillsSection } from '../sections';
+import {
+  HomeSection,
+  AboutSection,
+  ContactSection,
+  FooterSection,
+} from '../sections';
 
 import data from '../assets/data/data';
 
@@ -21,7 +26,8 @@ export default function Home() {
           profilePic={profilePic}
           list={thingsList}
         />
-        {/* <SkillsSection /> */}
+        <ContactSection />
+        <FooterSection />
       </Container>
     </>
   );
