@@ -18,6 +18,10 @@ export const Div = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 991px) {
+    margin: auto 5rem;
+  }
 `;
 
 export const H2 = styled.h2`
@@ -25,11 +29,20 @@ export const H2 = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
+
+  @media (max-width: 991px) {
+    text-align: center;
+  }
 `;
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 export const Circle = styled.figure`
@@ -57,12 +70,20 @@ export const Circle = styled.figure`
 export const Content = styled.div`
   margin-left: auto;
   padding: 0 4rem;
+
+  @media (max-width: 991px), (max-width: 1136px) {
+    padding: 0;
+  }
 `;
 
 export const H3 = styled.h3`
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.2;
+
+  @media (max-width: 850px) {
+    text-align: center;
+  }
 `;
 
 export const P = styled('p')<{ blue?: boolean }>`
@@ -73,6 +94,10 @@ export const P = styled('p')<{ blue?: boolean }>`
   font-size: 1rem;
   line-height: 1.7;
   color: ${({ blue }) => (blue ? '#007bff' : 'gray')};
+
+  @media (max-width: 850px) {
+    text-align: center;
+  }
 `;
 
 export const List = styled.div`
@@ -101,4 +126,8 @@ export const ProfileImage = styled.img`
   margin-left: 10rem;
   border-radius: 50%;
   border: 5px solid #313131;
+
+  @media (max-width: 991px), (max-width: 1136px) {
+    margin-left: 0;
+  }
 `;

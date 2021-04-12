@@ -67,7 +67,7 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                         bottom
                         cascade
                         duration={500}
-                        key={`${element}${Math.random() * 10}`}
+                        key={`${Math.random() * 10}`}
                       >
                         <Item>
                           <FontAwesomeIcon
