@@ -54,15 +54,21 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                 </Fade>
                 <Reveal>
                   <P>
-                    Hello! My name is Raul Max, I am from Brazil and a
-                    technology enthusiast. Now I'm working as a software
-                    developer building mobile/web applications, mainly focusing
-                    on Front End technologies.
+                    Hello! My name is Raul Max, I am from Brazil and I love
+                    coding. Now working as a software developer building
+                    mobile/web applications, I hope to build apps that makes the
+                    user's life simple, which is why i chose to mainly focus on
+                    Front End technologies.
                   </P>
                   <P blue>Some of the technologies i use:</P>
                   <List>
                     {list.map(element => (
-                      <Fade bottom cascade duration={500}>
+                      <Fade
+                        bottom
+                        cascade
+                        duration={500}
+                        key={`${element}${Math.random() * 10}`}
+                      >
                         <Item>
                           <FontAwesomeIcon
                             icon={element.icon}
@@ -82,10 +88,7 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                     }}
                   >
                     <Fade right cascade duration={300}>
-                      <Button href="mailto:raulmax319@gmail.com" primary>
-                        Contact me
-                      </Button>
-                      <Button href={cvLink} target="_blank">
+                      <Button href={cvLink} target="_blank" primary>
                         Download CV
                       </Button>
                     </Fade>
