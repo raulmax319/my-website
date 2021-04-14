@@ -18,6 +18,7 @@ export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  cursor: pointer;
 `;
 
 export const Sub = styled.h3`

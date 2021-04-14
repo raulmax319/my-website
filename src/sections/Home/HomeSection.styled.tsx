@@ -20,7 +20,12 @@ export const BannerArea = styled.div`
   }
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  min-height: calc(100vh);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+`;
 
 export const BannerContent = styled.div`
   color: #fff;

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Reveal, Fade } from 'react-reveal';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
   About,
@@ -17,11 +15,11 @@ import {
   ListItem as Item,
   ProfileImage,
 } from './AboutSection.styled';
-import { Button } from '../../components';
+import { Button, Icon } from '../../components';
 
 interface IProps {
   cvLink: string;
-  list: Array<{ text: string; icon: IconProp }>;
+  list: Array<Array<{ text: string; icon: string }>>;
   profilePic: string;
 }
 
@@ -54,26 +52,30 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                 </Fade>
                 <Reveal>
                   <P>
-                    Hello! My name is Raul Max, I am from Brazil and a
-                    technology enthusiast. Now I'm working as a software
-                    developer building mobile/web applications, mainly focusing
-                    on Front End technologies.
+                    Hello! My name is Raul Max, I am from Brazil and I love
+                    coding. Now working as a software developer building
+                    mobile/web applications, I hope to build apps that makes the
+                    user's life simple, which is why i chose to mainly focus on
+                    Front End technologies.
                   </P>
-                  <P blue>Some of the technologies i use:</P>
-                  <List>
-                    {list.map(element => (
-                      <Fade bottom cascade duration={500}>
-                        <Item>
-                          <FontAwesomeIcon
-                            icon={element.icon}
-                            size="2x"
-                            color="#313131"
-                          />
-                          {element.text}
-                        </Item>
-                      </Fade>
-                    ))}
-                  </List>
+                  <P blue>Some of the techs I work with:</P>
+                  {list.map(element => (
+                    <List>
+                      {element.map(e => (
+                        <Fade
+                          bottom
+                          cascade
+                          duration={500}
+                          key={`${Math.random() * 10}`}
+                        >
+                          <Item>
+                            <Icon name={e.icon} />
+                            {e.text}
+                          </Item>
+                        </Fade>
+                      ))}
+                    </List>
+                  ))}
                   <div
                     style={{
                       display: 'flex',
@@ -82,10 +84,7 @@ export function AboutSection({ cvLink, list, profilePic }: IProps) {
                     }}
                   >
                     <Fade right cascade duration={300}>
-                      <Button href="mailto:raulmax319@gmail.com" primary>
-                        Contact me
-                      </Button>
-                      <Button href={cvLink} target="_blank">
+                      <Button href={cvLink} target="_blank" primary>
                         Download CV
                       </Button>
                     </Fade>

@@ -9,7 +9,9 @@ export function ContactSection() {
     <Container className="contact">
       <Content>
         <Title>
-          <FontAwesomeIcon icon={faEnvelopeOpenText} /> Contact me
+          <a href="mailto:raulmax319@gmail.com" target="_blank">
+            <FontAwesomeIcon icon={faEnvelopeOpenText} /> Contact me
+          </a>
         </Title>
         <Sub>raulmax319@gmail.com</Sub>
       </Content>

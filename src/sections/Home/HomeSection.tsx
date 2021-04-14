@@ -2,10 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Fade, Reveal } from 'react-reveal';
+import { Parallax } from 'react-parallax';
 
 import {
   Home,
-  BannerArea,
   Container,
   BannerContent,
   SocialLinks,
@@ -25,7 +25,7 @@ export function HomeSection({
 }: HomeSectionProps) {
   return (
     <Home className="home">
-      <BannerArea>
+      <Parallax bgImage="images/background.jpg" strength={250}>
         <Container>
           <BannerContent>
             <Reveal effect="fadeInUp">
@@ -53,7 +53,7 @@ export function HomeSection({
             </Fade>
           </BannerContent>
         </Container>
-      </BannerArea>
+      </Parallax>
     </Home>
   );
 }
