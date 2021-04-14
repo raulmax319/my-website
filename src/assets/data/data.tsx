@@ -3,12 +3,7 @@ import {
   faTwitter,
   faLinkedinIn,
   faGithub,
-  faReact,
-  faJsSquare,
-  faCss3Alt,
-  faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
-import { faAtom, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   name: 'Raul Max.',
@@ -36,26 +31,50 @@ export default {
     },
   ],
   thingsList: [
-    {
-      text: 'React',
-      icon: faReact,
-    },
-    {
-      text: 'JavaScript',
-      icon: faJsSquare,
-    },
-    {
-      text: 'CSS',
-      icon: faCss3Alt,
-    },
-    {
-      text: 'MySQL',
-      icon: faDatabase,
-    },
-    {
-      text: 'Redux',
-      icon: faAtom,
-    },
+    [
+      {
+        text: 'React',
+        icon: 'SiReact',
+      },
+      {
+        text: 'JavaScript',
+        icon: 'SiJavascript',
+      },
+      {
+        text: 'CSS',
+        icon: 'SiCss3',
+      },
+      {
+        text: 'MySQL',
+        icon: 'SiMysql',
+      },
+      {
+        text: 'Redux',
+        icon: 'SiRedux',
+      },
+    ],
+    [
+      {
+        text: 'Node',
+        icon: 'SiNodeDotJs',
+      },
+      {
+        text: 'TypeScript',
+        icon: 'SiTypescript',
+      },
+      {
+        text: 'Git',
+        icon: 'SiGit',
+      },
+      {
+        text: 'MongoDB',
+        icon: 'SiMongodb',
+      },
+      {
+        text: 'Yarn',
+        icon: 'SiYarn',
+      },
+    ],
   ],
   aboutMe: 'About Me',
   aboutDetails: 'Full-Stack developer',
