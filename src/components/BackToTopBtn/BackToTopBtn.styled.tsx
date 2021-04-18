@@ -30,11 +30,33 @@ export const SquareBtn = styled(Link)<TransientProp>`
   display: visible;
   transition: left 400ms ease-in-out;
 
-  @media (max-width: 768px), (max-width: 1280px) {
+  @media (max-width: 991px), (max-width: 1280px) {
     ${({ $isvisible }) =>
       $isvisible
         ? css`
             left: 90%;
+          `
+        : css`
+            left: 120%;
+          `}
+  }
+
+  @media (max-width: 768px) {
+    ${({ $isvisible }) =>
+      $isvisible
+        ? css`
+            left: 80%;
+          `
+        : css`
+            left: 120%;
+          `}
+  }
+
+  @media (max-width: 321px) {
+    ${({ $isvisible }) =>
+      $isvisible
+        ? css`
+            left: 70%;
           `
         : css`
             left: 120%;
