@@ -1,24 +1,13 @@
-<h1 align="center">Welcome to My Portfolio 👋</h1>
+<h1 align="center">Welcome to my website 👋</h1>
 <p>
   <a href="https://twitter.com/raulmax319" target="_blank">
     <img alt="Twitter: raulmax319" src="https://img.shields.io/twitter/follow/raulmax319.svg?style=social" />
   </a>
 </p>
 
-> A Portfolio created to show future projects
+> A website created to make it easier to contact me
 
 ### 🏠 [Homepage](https://raulmax319.netlify.app)
-
-```sh
-## Clone
-git clone https://github.com/raulmax319/my-portfolio.git
-
-## Install
-yarn install or npm install
-
-## Usage
-yarn dev or next dev
-```
 
 ## Author
 
@@ -30,7 +19,7 @@ yarn dev or next dev
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/raulmax319/my-portfolio/issues).
+Contributions and feature requests are welcome!
 
 ## Show your support
 
