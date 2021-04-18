@@ -19,6 +19,11 @@ export const Title = styled.h1`
   font-weight: 700;
   margin-bottom: 1rem;
   cursor: pointer;
+
+  @media (max-width: 400px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 `;
 
 export const Sub = styled.h3`

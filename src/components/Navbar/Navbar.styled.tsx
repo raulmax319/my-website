@@ -73,13 +73,31 @@ export const NavList = styled('div')<{ isOpen: boolean; scrolled: boolean }>`
       scrolled
         ? css`
             background: #fff;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
           `
         : css`
             background: rgba(0, 0, 0, 0.5);
           `}
     width: 350px;
     max-height: ${({ isOpen }) => (isOpen ? '350px' : '0')};
-    transition: max-height 350ms ease-in-out, background 350ms ease-in-out;
+    transition: max-height 300ms ease-in-out, background 350ms ease-in-out;
+  }
+
+  @media (max-width: 991px) {
+    left: 65%;
+  }
+
+  @media (max-width: 891px) {
+    left: 60%;
+  }
+
+  @media (max-width: 791px) {
+    left: 55%;
+  }
+
+  @media (max-width: 400px), (max-width: 500px), (max-width: 691px) {
+    left: 0%;
+    width: 100%;
   }
 `;
 
@@ -130,5 +148,9 @@ export const Nav = styled('nav')<IProps>`
 
   & ${NavLinks}::after {
     background: ${({ scrolled }) => (scrolled ? '#040c2c' : '#fff')};
+  }
+
+  @media (max-width: 281px) {
+    padding: 0 0.5rem;
   }
 `;
