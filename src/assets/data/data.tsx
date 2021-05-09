@@ -82,5 +82,5 @@ export default {
   cvLink:
     'https://drive.google.com/file/d/1fqB5nZrWfiUVcv1a5o4wD7q4cvLN60r9/view?usp=sharing',
   profilePic:
-    'https://scontent.fsdu1-1.fna.fbcdn.net/v/t1.6435-9/46169328_1991846064242281_135426142818533376_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=wslXX7X2Pj0AX_Lwiyj&_nc_ht=scontent.fsdu1-1.fna&oh=de3fd931be6e52450cdf62eff2374ace&oe=608FDCA2',
+    'https://avatars.githubusercontent.com/u/17752968?v=4',
 };
