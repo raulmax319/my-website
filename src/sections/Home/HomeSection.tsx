@@ -43,7 +43,7 @@ export function HomeSection({
                   socialLinks.map(item => {
                     return (
                       <li key={item.name}>
-                        <a href={item.url} target="_blank" ref="noreferrer">
+                        <a href={item.url} target="_blank" rel="noreferrer">
                           <FontAwesomeIcon icon={item.className} />
                         </a>
                       </li>
