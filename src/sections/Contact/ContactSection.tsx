@@ -9,7 +9,11 @@ export function ContactSection() {
     <Container className="contact">
       <Content>
         <Title>
-          <a href="mailto:raulmax319@gmail.com" target="_blank">
+          <a
+            href="mailto:raulmax319@gmail.com"
+            target="_blank"
+            ref="noreferrer"
+          >
             <FontAwesomeIcon icon={faEnvelopeOpenText} /> Contact me
           </a>
         </Title>
