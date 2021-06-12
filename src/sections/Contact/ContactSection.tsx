@@ -12,7 +12,7 @@ export function ContactSection() {
           <a
             href="mailto:raulmax319@gmail.com"
             target="_blank"
-            ref="noreferrer"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faEnvelopeOpenText} /> Contact me
           </a>
