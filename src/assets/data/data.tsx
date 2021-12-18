@@ -80,7 +80,7 @@ export default {
   aboutDetails: 'Full-Stack developer',
   details: "I'm Raul Max ty",
   cvLink:
-    'https://1drv.ms/b/s!AtiUcFNLq43kg4l7WAIdusnMmH7aoQ',
+    'https://1drv.ms/b/s!AtiUcFNLq43kg4oOi1gYyyYy5gxO6g?e=HtcwyY',
   profilePic:
     'https://avatars.githubusercontent.com/u/17752968?v=4',
 };
