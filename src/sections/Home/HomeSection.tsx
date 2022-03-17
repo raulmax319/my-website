@@ -35,7 +35,7 @@ export function HomeSection({
               <H2>I&#39;m Raul Max</H2>
             </Reveal>
             <Reveal effect="fadeInUp">
-              <h4>Full-Stack Developer</h4>
+              <h4>Mobile Engineer</h4>
             </Reveal>
             <Fade bottom cascade duration={1000}>
               <SocialLinks>
