@@ -6,7 +6,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "jsx": "react",
-    "rootDir": "src",
+    "rootDir": ".",
     "baseUrl": "src",
     "paths": {
       "~/*": ["*"]
@@ -20,5 +20,5 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src"]
+  "include": ["src", "webpack.config.js"]
 }
