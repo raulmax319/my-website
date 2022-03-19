@@ -10,7 +10,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
     alias: {
       '~': path.resolve(__dirname, 'src'),
     },
@@ -25,4 +25,30 @@ module.exports = {
     'react-dom': 'ReactDOM',
   },
   plugins: [new CleanWebpackPlugin()],
+  module: {
+    rules: [
+      {
+        test: /\.ts(x?)$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+    ],
+  },
 };
