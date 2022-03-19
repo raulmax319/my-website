@@ -1,0 +1,14 @@
+{
+  "name": "raulmax-website",
+  "version": "1.0.0",
+  "description": "contact me",
+  "main": "index.js",
+  "repository": "git@github.com:raulmax319/my-website.git",
+  "author": "Raul Max <raulmax319@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "husky": "^7.0.4"
+  }
+}
