@@ -1,3 +1,69 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home {
-  background-color: #fc0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+
+  > h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+
+    animation: fadeIn 500ms;
+  }
+
+  > h4 {
+    font-size: 1.5rem;
+  }
+
+  > h5 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+
+  > li {
+    display: inline-block;
+    margin: 0 5px;
+
+    > a {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.25);
+      color: var(--white);
+      font-size: 1rem;
+      line-height: 2.5rem;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms ease;
+
+      &:hover {
+        background: var(--white);
+        color: var(--text);
+      }
+    }
+  }
 }
