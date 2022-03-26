@@ -11,29 +11,39 @@
   width: 100vw;
   height: 100vh;
   background: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url(./svgviewer-output.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 .container {
-  text-align: center;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-  > h2 {
-    font-size: 3.5rem;
-    font-weight: bold;
+  > div {
+    &:only-child {
+      color: var(--white);
+    }
 
-    animation: fadeIn 500ms;
-  }
+    > h2 {
+      font-size: 3.5rem;
+      font-weight: bold;
 
-  > h4 {
-    font-size: 1.5rem;
-  }
+      animation: fadeIn 500ms;
+    }
 
-  > h5 {
-    font-size: 1.25rem;
-    font-weight: 400;
-    letter-spacing: 1px;
+    > h4 {
+      font-size: 1.5rem;
+    }
+
+    > h5 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
   }
 }
 
