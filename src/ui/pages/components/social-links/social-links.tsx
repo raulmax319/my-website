@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  faFacebookF,
-  faGithub,
-  faLinkedinIn,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
 import styles from './social-links.styles.scss';
 
@@ -23,12 +17,12 @@ export const SocialLinks: React.FC = () => (
     </li> */}
     <li>
       <a href="" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faLinkedinIn} />
+        <FaLinkedinIn />
       </a>
     </li>
     <li>
       <a href="" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faGithub} />
+        <FaGithub />
       </a>
     </li>
   </ul>
