@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Home } from '~/ui/pages';
-import '~/ui/theme/theme.scss';
 
-ReactDOM.render(<Home />, document.getElementById('main'));
+import '~/ui/theme/theme.scss';
+import App from './app';
+
+ReactDOM.render(<App />, document.getElementById('main'));
