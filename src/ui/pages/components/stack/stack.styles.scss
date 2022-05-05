@@ -1,0 +1,23 @@
+.stack {
+  background-color: #cf0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.item {
+  background-color: #fc0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  > svg {
+    font-size: 2rem;
+    color: var(--icon);
+  }
+}
