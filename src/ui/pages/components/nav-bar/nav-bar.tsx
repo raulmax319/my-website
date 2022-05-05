@@ -1,4 +1,5 @@
 import React from 'react';
+
 import styles from './nav-bar.styles.scss';
 
 export const NavBar: React.FC = () => {
