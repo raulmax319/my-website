@@ -23,7 +23,7 @@ export const About: React.FC = () => (
             management. I have a passion for learning new things and building
             applications that make people&#39;s lives better.
           </p>
-          <p className={styles.blue}>Some of my skills include:</p>
+          <p className={styles.blueText}>Some of my skills include:</p>
           <Stack />
         </div>
       </div>

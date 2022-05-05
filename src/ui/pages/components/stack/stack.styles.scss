@@ -1,15 +1,17 @@
 .stack {
-  background-color: #cf0;
+  // background-color: #cf0;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
   overflow: hidden;
 }
 
 .item {
-  background-color: #fc0;
+  width: calc(100% / 5);
+  margin: 0.5rem 0;
+  // background-color: #fc0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,5 +21,17 @@
   > svg {
     font-size: 2rem;
     color: var(--icon);
+  }
+
+  > span {
+    margin-top: 0.5rem;
+  }
+
+  @media screen and (max-width: 1440px) {
+    width: calc(100% / 4);
+  }
+
+  @media screen and (max-width: 386px) {
+    width: calc(100% / 3);
   }
 }
